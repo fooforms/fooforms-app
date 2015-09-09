@@ -9048,83 +9048,6 @@ var packageMetadata = {
                   "type": "constant",
                   "value": 7294
                 },
-                "fout": {
-                  "type": "constant",
-                  "value": 31
-                },
-                "child": {
-                  "type": "object",
-                  "members": {
-                    "domain": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "signalCode": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "exitCode": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "pid": {
-                      "type": "constant",
-                      "value": 7294
-                    },
-                    "stdin": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "stdout": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "stderr": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "stdio": {
-                      "type": "array"
-                    },
-                    "spawn": {
-                      "type": "function"
-                    },
-                    "kill": {
-                      "type": "function"
-                    },
-                    "ref": {
-                      "type": "function"
-                    },
-                    "unref": {
-                      "type": "function"
-                    },
-                    "setMaxListeners": {
-                      "type": "function"
-                    },
-                    "emit": {
-                      "type": "function"
-                    },
-                    "addListener": {
-                      "type": "function",
-                      "refID": 17
-                    },
-                    "on": {
-                      "ref": 17
-                    },
-                    "once": {
-                      "type": "function"
-                    },
-                    "removeListener": {
-                      "type": "function"
-                    },
-                    "removeAllListeners": {
-                      "type": "function"
-                    },
-                    "listeners": {
-                      "type": "function"
-                    }
-                  }
-                },
                 "getTaskName": {
                   "type": "function"
                 },
@@ -10056,9 +9979,9 @@ var packageMetadata = {
       "type": "undefined"
     }
   }
-};
-var globalContext = (typeof global !== 'undefined') ? global : window;
-var originalContext = [];
+}
+var globalContext = (typeof global !== 'undefined') ? global : window
+var originalContext = []
 
 /*
 originalContext = [
@@ -10083,19 +10006,19 @@ function _restoreOriginal(original) {
 }
 
 function restoreOriginals() {
-  originalContext.forEach(_restoreOriginal);
+  originalContext.forEach(_restoreOriginal)
   originalContext = []
 }
 
 function loadMocks() {
   for (var packageName in packageMetadata) {
     for (var packageExportName in packageMetadata[packageName]) {
-      _saveOriginal(globalContext, packageExportName);
-      var packageExport = packageMetadata[packageName][packageExportName];
+      _saveOriginal(globalContext, packageExportName)
+      var packageExport = packageMetadata[packageName][packageExportName]
       globalContext[packageExportName] = ComponentMocker.generateFromMetadata(packageExport)
     }
   }
 }
 
-beforeEach(loadMocks);
-afterEach(restoreOriginals);
+beforeEach(loadMocks)
+afterEach(restoreOriginals)

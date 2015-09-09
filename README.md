@@ -16,8 +16,3 @@ These environment variable should be set.
 
 `EMAIL_PORT`
 
-
-EMAIL_USERNAME="fooforms"
-EMAIL_PASSWORD="G0Fly09123*"
-EMAIL_SERVER="smtp.sendgrid.net"
-EMAIL_PORT="2525"
