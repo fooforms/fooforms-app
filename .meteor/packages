@@ -10,9 +10,11 @@ urigo:angular
 angular:angular-material
 angularui:angular-ui-router
 accounts-password
-accounts-ui
 urigo:angular-blaze-template
 planettraining:material-design-icons
 angular:angular-mocks
 sanjo:jasmine
 velocity:html-reporter
+accounts-facebook
+accounts-twitter
+email

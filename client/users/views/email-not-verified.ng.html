@@ -1,0 +1,21 @@
+<md-content layout-padding>
+
+    <div>
+        <h3>{{ envc.message }}</h3>
+
+        <form name="verifyEmailForm">
+            <md-input-container>
+                <md-icon md-svg-icon="communication:ic_email_24px" class="email"></md-icon>
+                <input name="verifyEmail" ng-required="true" ng-model="envc.verification.email" type="email"
+                       placeholder="Email (required)">
+            </md-input-container>
+            <md-input-container>
+                <md-button ng-disabled="verifyEmailForm.$invalid"
+                           class="md-raised md-primary"
+                           ng-click="envc.sendVerification()">Send
+                </md-button>
+            </md-input-container>
+        </form>
+    </div>
+
+</md-content>
